@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:elevation="10dp"
+    android:id="@+id/linearLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:elevation="10dp"
+        android:background="@color/green"
+        android:layout_marginLeft="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Date"
+                android:layout_gravity="center_horizontal"
+                android:textSize="10dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/drop_shadow"
+                android:gravity="center">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/l1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:paddingTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/t_rides1"
+                    android:text="Total Rides:" />
+                <TextView
+                    android:id="@+id/t_rides"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Total Rides"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/expandless"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_expand"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/expandmore"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_collapse"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/t_amount1"
+                    android:text="Total Amount :" />
+                <TextView
+                    android:id="@+id/t_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Total Amount  "
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total paid :"
+                    android:id="@+id/t_paid1"
+                    android:paddingLeft="10dp" />
+                <TextView
+                    android:id="@+id/t_paid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:paddingLeft="10dp"
+                    android:hint="0"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total unpaid :"
+                    android:id="@+id/t_unpaid1"
+                    android:paddingLeft="10dp" />
+                <TextView
+                    android:id="@+id/t_unpaid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:paddingLeft="10dp"
+                    android:hint="Total unpaid"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            <!--    <TextView
+                    android:id="@+id/g_pin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Generate pin"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_horizontal"
+                    android:textSize="15dp"
+                    android:background="@color/hapcolor"/>-->
+                <TextView
+                    android:id="@+id/pay"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="PAY"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_horizontal"
+                    android:textSize="15dp"
+                    android:background="@color/hapcolor"/>
+                <TextView
+                    android:id="@+id/pending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pending.."
+                    android:textColor="@color/red"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_horizontal"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/completed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Completed"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/green"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+

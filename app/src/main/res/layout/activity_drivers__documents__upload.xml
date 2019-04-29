@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/hapcolor">
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_marginTop="40dp"
+       android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:textColor="@color/hapcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rct"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:textSize="20dp"
+
+                android:text="Rc"/>
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/rc"
+                android:layout_marginRight="10dp"
+                android:textAllCaps="true"
+                android:background="@color/hapcolor"
+                android:textColor="@color/white"
+                android:text="select"/>
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/load"
+                android:src="@drawable/load"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/success"
+                android:src="@drawable/succ"
+                android:visibility="gone"/>
+
+
+            <TextView
+                android:id="@+id/rcuploaded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green"
+                android:layout_marginRight="10dp"
+                android:text="Uploaded"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rct2"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:textColor="@color/hapcolor"
+                android:textSize="20dp"
+                android:text="License"/>
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/license"
+                android:layout_marginRight="10dp"
+
+                android:textAllCaps="true"
+                android:background="@color/hapcolor"
+                android:textColor="@color/white"
+                android:text="select"
+                />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/load1"
+                android:src="@drawable/load"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/success1"
+                android:src="@drawable/succ"
+                android:visibility="gone"/>
+
+
+
+            <TextView
+                android:id="@+id/licenseuploaded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green"
+                android:layout_marginRight="10dp"
+
+
+                android:text="Uploaded"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/insurancetext"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+
+                android:textColor="@color/hapcolor"
+                android:textSize="20dp"
+                android:text="Insurance"/>
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/insurance"
+                android:textAllCaps="true"
+                android:layout_marginRight="10dp"
+
+                android:background="@color/hapcolor"
+                android:textColor="@color/white"
+                android:text="select"
+                />
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/load2"
+                android:src="@drawable/load"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/success2"
+                android:src="@drawable/succ"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/insuranceuploaded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green"
+                android:layout_marginRight="10dp"
+
+                android:text="Uploaded"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pollutiontext"
+                android:layout_weight="1"
+                android:textColor="@color/hapcolor"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+
+                android:text="Pollution"/>
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/pollution"
+                android:textAllCaps="true"
+                android:layout_marginRight="10dp"
+
+                android:background="@color/hapcolor"
+                android:textColor="@color/white"
+                android:text="select"
+                />
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/load3"
+                android:src="@drawable/load"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/success3"
+                android:src="@drawable/succ"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/pollutionuploaded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green"
+                android:layout_marginRight="10dp"
+
+                android:text="Uploaded"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/aadhaartext"
+                android:layout_weight="1"
+                android:textColor="@color/hapcolor"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+
+                android:text="Aadhar"/>
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/aadhar"
+                android:textAllCaps="true"
+                android:layout_marginRight="10dp"
+
+                android:background="@color/hapcolor"
+                android:textColor="@color/white"
+                android:text="select"
+                />
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/load4"
+                android:src="@drawable/load"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/success4"
+                android:src="@drawable/succ"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/aadharuploaded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green"
+                android:layout_marginRight="10dp"
+
+
+                android:text="Uploaded"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pantext"
+                android:layout_weight="1"
+                android:textColor="@color/hapcolor"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+                android:text="Pan"/>
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/pan"
+                android:layout_marginRight="10dp"
+
+                android:background="@color/hapcolor"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:text="select"
+
+                /><ImageView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:id="@+id/load5"
+            android:src="@drawable/load"
+            android:visibility="gone"/>
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/success5"
+                android:src="@drawable/succ"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/panuploaded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green"
+                android:layout_marginRight="10dp"
+
+                android:text="Uploaded"/>
+
+        </LinearLayout>
+   </LinearLayout>
+
+
+</LinearLayout>

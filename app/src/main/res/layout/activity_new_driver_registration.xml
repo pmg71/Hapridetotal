@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/hapcolor"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/firstname"
+                    android:inputType="textCapCharacters"
+                    android:singleLine="true"
+                    android:maxLength="30"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:hint="First Name"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lastname"
+                    android:maxLength="30"
+                    android:inputType="textCapCharacters"
+                    android:singleLine="true"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:hint="Last Name"/></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mobilenumber"
+                    android:ems="10"
+                    android:maxLength="10"
+                    android:hint="Mobile number"
+                    android:inputType="number"
+                    android:singleLine="true"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vehiclenumber"
+                    android:inputType="textCapCharacters"
+                    android:singleLine="true"
+                    android:maxLength="10"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+                    android:hint="Vehicle Number"/></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:layout_width="145dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vehicletype"
+                    android:background="@drawable/belowline"
+                    android:hint="Source"
+                    />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/belowline"
+                    android:id="@+id/noofseats"
+                    /></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+           <!--     <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rcnumber"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                    android:inputType="textCapCharacters"
+                    android:singleLine="true"
+                    android:maxLength="30"
+
+                    android:hint="Rc number"/>-->
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/license"
+                    android:inputType="textCapCharacters"
+                    android:singleLine="true"
+                    android:maxLength="16"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                    android:hint="Enter Your License"/></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:maxLength="30"
+
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pollutioncheck"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                    android:inputType="textCapCharacters"
+                    android:singleLine="true"
+                    android:maxLength="14"
+                    android:hint="Pollution No "/>
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:maxLength="30"
+
+                    android:id="@+id/pollutioncalendar"
+                    android:background="@drawable/calendar"/>
+                <TextView                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pollutioncheckexpiry"
+                    android:inputType="date"
+                    android:singleLine="true"
+                    android:maxLength="30"
+                    android:editable="true"
+                    android:hint="Expiry Date"/></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/insurance"
+                    android:inputType="textCapCharacters"
+                    android:singleLine="true"
+                    android:maxLength="20"
+                    android:editable="false"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                    android:hint="Insurance No"/>
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/insurancecalendar"
+                    android:background="@drawable/calendar"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/insuranceexpiry"
+                    android:inputType="date"
+                    android:singleLine="true"
+                    android:editable="true"
+                    android:hint="Expiry Date"/></LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:id="@+id/createdby"
+                android:inputType="text"
+                android:maxLength="30"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:hint="Who Registrated This Driver?"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Next"
+                android:maxLength="30"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:background="@color/hapcolor"
+                android:singleLine="true"
+                android:id="@+id/next"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

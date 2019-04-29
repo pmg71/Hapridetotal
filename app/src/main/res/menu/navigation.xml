@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="Home" />
+    <item android:id="@+id/status"
+        android:icon="@drawable/status"
+        android:title="Status" />
+    <item android:id="@+id/assignRides"
+        android:icon="@drawable/status"
+        android:title="Assigned Rides" />
+
+    <item android:id="@+id/scanning"
+        android:icon="@drawable/qrcode"
+        android:title="My Refferal Code" />
+
+    <item android:id="@+id/DriverRegistration"
+        android:icon="@drawable/driver"
+        android:title="Driver Registration" />
+    <item android:id="@+id/rideinhistory"
+        android:icon="@drawable/getin"
+        android:title="RideIn History" />
+    <item android:id="@+id/rideouthistory"
+        android:icon="@drawable/getout"
+        android:title="RideOut History" ></item>
+    <item android:id="@+id/settlement"
+        android:icon="@drawable/settlement"
+        android:title="Settlement" ></item>
+
+
+    <item android:id="@+id/contactsupervisor"
+        android:icon="@drawable/callsupervisor"
+        android:title="Contact Supervisor" ></item>
+    <item android:id="@+id/video"
+        android:icon="@drawable/videomenu"
+        android:title="Want to take Video?" />
+    <item android:id="@+id/contactus"
+        android:icon="@drawable/contactadmin"
+        android:title="Contact Us" ></item>
+    <item android:id="@+id/Howtouseapp"
+        android:icon="@drawable/howtouseapp"
+        android:title="How To Use App" ></item>
+    <item android:id="@+id/aboutus"
+        android:icon="@drawable/about"
+        android:title="About Us" ></item>
+
+    <item android:id="@+id/logout"
+        android:icon="@drawable/logout"
+        android:title="Log out" ></item>
+
+</menu>

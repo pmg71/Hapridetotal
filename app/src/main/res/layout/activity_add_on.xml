@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/hapcolor"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="40dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/costlab1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today Rides:      "
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/costlab2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textColor="@color/red"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/costlab3"
+                    android:layout_width="47dp"
+                    android:layout_height="wrap_content"
+                    android:text="   Cab,   "
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/costlab4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs.  "
+                    android:textColor="@color/red"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/costlab5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="    Auto"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Book Ride"
+                    android:textColor="@color/hapcolor"
+                    android:gravity="center"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/from"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:hint="From"
+                    android:layout_marginTop="5dp"
+                    />
+                <EditText
+                    android:id="@+id/to"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:hint="To"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/driver_name"
+                    android:layout_width="170dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/belowline"
+                    android:ems="10"
+                    android:paddingLeft="50dp"
+                    android:layout_marginTop="-5dp"
+                    android:hint="Driver name" />
+                <EditText
+                    android:id="@+id/vech_no"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:hint="vehicle number" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/vehicle_type"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:hint="vehicle type" />
+                <EditText
+                    android:id="@+id/driver_no"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Contact"
+                    android:focusable="false"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/no_of_passengers"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:background="@drawable/belowline"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="-5dp"
+                    android:hint="No.of Passengers"/>
+                <EditText
+                    android:id="@+id/total_fare"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="0.0"
+                    android:focusable="false"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/passengers"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:hint="Passengers" />
+                <EditText
+                    android:id="@+id/total_fare2"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="fare"
+                    android:focusable="false"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <Spinner
+                    android:id="@+id/agent_id"
+                    android:layout_width="170dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/belowline"
+                    android:ems="10"
+                    android:hint="Agent Id" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/assign"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/hapcolor"
+                android:text="Assign"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

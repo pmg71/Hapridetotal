@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cadrac.hap">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:allowClearUserData="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Adapters.Agent_AssignedRides_Adapter"></activity>
+        <activity android:name=".activites.agent_assignedRides" />
+        <activity android:name=".Adapters.request_adapter" />
+        <activity android:name=".activites.AddOn" />
+        <activity android:name=".Adapters.Agent_Req_Adapter" />
+        <activity android:name=".activites.fragment_agent_req" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name=".MainActivity" />
+        <activity android:name=".activites.driver_login" />
+        <activity android:name=".activites.supervisior_login" />
+        <activity android:name=".activites.agent_login" />
+        <activity android:name=".activites.Home_agent" />
+        <activity android:name=".activites.fragment_agent_drivers_availabilty" />
+        <activity android:name=".activites.fragment_agent_ridein" />
+        <activity android:name=".activites.fragment_agent_rideout" />
+        <activity android:name=".activites.Home_driver" />
+        <activity android:name=".activites.home_supervisor" />
+        <activity android:name=".activites.fragment_supervisor_status" />
+        <activity android:name=".activites.fragment_supervisor_collected" />
+        <activity android:name=".activites.agent_rideout_status" />
+        <activity android:name=".activites.new_driver_registration" />
+        <activity android:name=".activites.agent_ridein_history" />
+        <activity
+            android:name=".activites.agent_rideout_history"
+            android:configChanges="keyboardHidden" />
+        <activity android:name=".activites.agent_to_supervisor_settlement" />
+        <activity android:name=".activites.agent_contactsupervisor" />
+        <activity android:name=".activites.contactus_company" />
+        <activity android:name=".activites.agent_howtouseapp" />
+        <activity android:name=".activites.aboutus_company" />
+        <activity android:name=".activites.driver_howtouseapp" />
+        <activity android:name=".activites.supervisor_queries" />
+        <activity android:name=".activites.supervisor_howtouseapp" />
+        <activity android:name=".Adapters.Driver_avaliabilty_adapter" />
+        <activity android:name=".activites.agent_ridein_history_adapter" />
+        <activity android:name=".activites.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activites.My_code" />
+        <activity android:name=".activites.Driver_History" />
+        <activity android:name=".activites.ChangePassword" />
+        <activity android:name=".activites.agent_driver_feedback" />
+        <activity android:name=".activites.ChangePassword_agent" />
+        <activity android:name=".activites.ChangePassword_driver" />
+        <activity android:name=".activites.Drivers_Documents_Upload" />
+        <activity android:name=".activites.Users_Video_Capture" />
+        <activity android:name=".activites.Upload_Image_Driver_Registration" />
+    </application>
+
+</manifest>

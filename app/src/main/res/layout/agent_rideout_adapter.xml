@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/hi"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="50dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginRight="5dp"
+    android:elevation="5dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drop_shadow"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/green"
+            android:elevation="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/agent_id1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="agent id"
+                    android:paddingLeft="10dp"
+                    android:textSize="18dp" />
+                <TextView
+                    android:id="@+id/driver_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="name"
+                    android:paddingLeft="10dp"
+                    android:textSize="18dp" />
+                <TextView
+                    android:id="@+id/total_fare1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="fare"
+                    android:paddingLeft="10dp"
+                    android:textSize="18dp" />
+                <TextView
+                    android:id="@+id/check"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/hapcolor"
+                    android:gravity="center"
+                    android:text="CHECK"
+                    android:textColor="#fff" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/agent_id2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Agent Id :"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/agent_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="agent id"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/close"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/hapcolor"
+                    android:gravity="center"
+                    android:text="CLOSE"
+                    android:textColor="#fff" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/driver_id1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Driver Id :"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/driver_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="driver id"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/driver_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Driver Name :"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/driver_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="driver name"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/Vech_no1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Vehicle number:"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/Vech_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="vehicle number"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/no_of_pass1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Number of passengers :"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/no_of_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Number of passengers"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/total_fare2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Total Fare :"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/total_fare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Total Fare"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/est_time1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Time :"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/est_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Time"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+                <TextView
+                    android:id="@+id/assign"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/hapcolor"
+                    android:gravity="center"
+                    android:text="ASSIGN"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:id="@+id/collect"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/hapcolor"
+                    android:gravity="center"
+                    android:text="COLLECT"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

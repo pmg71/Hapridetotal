@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/hapcolor"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <SeekBar
+            android:id="@+id/status"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:max="2"
+            android:maxHeight="15dp"
+            android:maxWidth="15dp"
+            android:minHeight="15dp"
+            android:minWidth="15dp"
+            android:progress="3"
+            android:progressDrawable="@drawable/stroke"
+            android:splitTrack="false"
+            android:thumb="@drawable/driverstatus"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="40dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOME"
+                android:textColor="@color/hapcolor"
+                android:layout_marginLeft="50dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AVAILABLE"
+                android:textColor="@color/hapcolor"
+                android:layout_marginLeft="70dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DRIVING"
+                android:textColor="@color/hapcolor"
+                android:layout_marginLeft="55dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/ll"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ride Id:  "
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/hapcolor"
+                android:id="@+id/ride"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/hapcolor"
+                android:textSize="20dp"
+                android:text="Ride Id"
+                android:id="@+id/ride_id"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

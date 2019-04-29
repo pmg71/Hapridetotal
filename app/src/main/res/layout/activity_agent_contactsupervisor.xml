@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/hapcolor"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Supervisor"
+            android:textSize="20dp"
+            android:layout_marginLeft="40dp"
+            android:textColor="#AD81CE"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Name :" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="S_Name"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:id="@+id/sname"
+            />
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/callbutton"
+            android:id="@+id/bcall"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="155dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sup Id : "
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="S_id"
+            android:paddingLeft="10dp"
+            android:id="@+id/sid" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="155dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact : "/>
+        <TextView
+            android:id="@+id/smobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="mobile"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/message"
+            android:id="@+id/bmsg"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/llmsg"
+        android:visibility="gone"
+
+        android:background="@drawable/squarestroke"
+        >
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:id="@+id/etmsg"
+            android:textSize="12dp"
+
+            android:background="@null"
+            android:hint="Description . . . "
+            android:gravity="center"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/llsend">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="SEND"
+            android:layout_marginRight="40dp"
+            android:textColor="#ffffff"
+            android:background="#AD81CE"
+            android:id="@+id/bsubmit"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:id="@+id/llmsg2"
+        android:background="@drawable/squarestroke"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:hint="msg"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textSize="12dp"
+            android:id="@+id/tvMsg"/>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+       android:visibility="gone"
+        android:id="@+id/llclean">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="#ffffff"
+            android:background="#AD81CE"
+            android:id="@+id/bclean"
+            android:text="clear issue"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

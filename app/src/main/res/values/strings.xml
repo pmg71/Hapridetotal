@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HAP</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="website_link">
+
+       <a href="https://novisync.com/contact/support/">https://cadrac.com/</a></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

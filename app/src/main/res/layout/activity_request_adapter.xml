@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/ll1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    android:minHeight="50dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/drop_shadow"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="0dp"/>
+
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="PassengerNumber       :        "
+                />
+
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="80dp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Seats                               :        "
+                />
+
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="80dp"
+                android:id="@+id/seats"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Destination                    :        "
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/destination"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Vehicle Type                  :        "
+                />
+
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="80dp"
+
+                android:id="@+id/veh_type"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/faretext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fare                                  :        " />
+
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="80dp"
+                android:id="@+id/fare"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/reqIdText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="Id                                      :        " />
+
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="80dp"
+                android:id="@+id/reqId"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:gravity="end"
+            >
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_width="55dp"
+                android:layout_height="35dp"
+                android:text="Accept"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:id="@+id/accept"
+                android:background="@color/hapcolor"
+                />
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_width="55dp"
+                android:layout_height="35dp"
+                android:text="Assign"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:id="@+id/assign"
+                android:background="@color/hapcolor"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="55dp"
+                android:layout_height="35dp"
+                android:text="Reject"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:id="@+id/reject"
+                android:background="@color/hapcolor"
+                />
+            <Button
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="55dp"
+                android:layout_height="35dp"
+                android:text="Add-on"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:visibility="gone"
+                android:id="@+id/addon"
+                android:background="@color/hapcolor"
+                />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

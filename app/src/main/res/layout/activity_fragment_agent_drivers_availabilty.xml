@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="left"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/line_end">
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="Name" />
+
+        <TextView
+            android:id="@+id/vehicle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="Vehicle No." />
+
+        <TextView
+            android:id="@+id/vehicleType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="Vehicle Type" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+
+
+
+
+        <LinearLayout
+            android:layout_weight="0.9"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            >
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:layout_weight="1"
+                android:id="@+id/swipeRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="150dp"
+                    android:scrollbars="vertical" />
+
+
+
+            </LinearLayout>
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+
+        android:id="@+id/nodrivers"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:textSize="15dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/nodriver"/>
+
+</FrameLayout>

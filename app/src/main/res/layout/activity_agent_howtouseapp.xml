@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activites.driver_howtouseapp">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/hapcolor"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="1.First Agent will log in through their Id and Password and select their source(starting place)." />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/agentstatus" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="2. In this app, the agent has three options one is available drivers and another one is ridein and the last ride out" />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/agenttab" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. In drivers,the agent will see all available drivers." />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/agentdriver" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="4. In Ridein agent will select the destination, no of passengers and type of vehicle and driver then assign to the rideout agent/destination agent." />
+             <ImageView
+                android:layout_width="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/agentgetin" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="5. In Rideout, driver will collect the ride money and give that money to the selected ride out agent,if the driver will not pay the total ride money it will shows the Alert like Pending money." />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/agentgetout" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

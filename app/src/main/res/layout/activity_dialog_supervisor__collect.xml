@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Cash"
+
+            android:textColor="@color/black"
+            android:layout_marginLeft="15dp"
+            />
+        <EditText
+            android:id="@+id/cash"
+            android:layout_marginLeft="30dp"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginRight="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Digital"
+
+            android:textColor="@color/black"
+            android:layout_marginLeft="15dp"
+            />
+        <EditText
+            android:id="@+id/digital"
+            android:layout_marginLeft="30dp"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginRight="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Pending"
+
+            android:textColor="@color/black"
+            android:layout_marginLeft="15dp"
+            />
+        <EditText
+            android:id="@+id/pending"
+            android:layout_marginLeft="30dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/OK"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="70dp"
+            android:background="@color/hapcolor"
+            android:gravity="center"
+            android:text="OK"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
